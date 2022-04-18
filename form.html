@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="base.css">
+  </head>
+  <body>  
+    <form>
+      <div><input type="text" id="name" placeholder="Nom" /></div>
+      <div>
+        <select id="gender">
+          <option>Choisissez une valeur</option>
+          <option value="male">Homme</option>
+          <option value="female">Femme</option>
+          <option value="other">Autre</option>
+        </select>  
+      </div>
+    </form>
+    
+    <div id="result">
+      Nom : <span id="res-name"></span><br />
+      Genre : <span id="res-gender"></span><br />
+      Souris : (<span id="mouse-x"></span>, <span id="mouse-y"></span>)
+    </div>
+	<form id="form-to-check">
+      <p>
+        <label>Code : <input type="text" name="code" id="code" /></label><br />
+        <div class="result" id="code-validation"></div>
+      </p>
+      <p>
+        <label>Email : <input type="email" pattern="[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" name="email" required/></label>
+      </p>
+      <p>
+         <input type="submit" value="Vérifier" id="submit-btn" />
+    </p>
+    </form>
+    
+    <script type="text/javascript" src="javascript.js"></script>
+  </body>
+</html>
